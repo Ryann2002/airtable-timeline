@@ -1,0 +1,40 @@
+# .gitignore
+
+# This file tells Git which files and folders it should not track.
+# It's useful for keeping compiled code, dependencies, and secret files
+# out of your version history.
+
+### Dependencies ###
+# The node_modules folder contains all the project's dependencies.
+# It can be very large and should always be ignored.
+# You can reinstall all dependencies using `npm install` or `yarn install`.
+/node_modules
+
+### Build output ###
+# The build folder contains the final, compiled version of your app.
+# This is generated when you run `npm run build`.
+# You should not track this folder because it's generated from your source code.
+/build
+/dist
+/.parcel-cache
+
+### Development files ###
+# The .env.local file is used to store local environment variables,
+# like API keys or database secrets. These should never be committed to Git.
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+### Log files ###
+# Log files created by npm or yarn.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### Editor directories and files ###
+# These are configuration files created by popular code editors.
+# It's good practice to ignore them to avoid conflicts between developers.
+.vscode/
+.idea/
+.DS_Store
